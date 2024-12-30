@@ -1,0 +1,14 @@
+.searchFieldContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.searchFieldContent {
+    width: 60%;
+    background-color: #202024;
+    color: #AFABB6;
+    padding: 0.8%;
+    border: 0 none;
+    outline: 0;
+}

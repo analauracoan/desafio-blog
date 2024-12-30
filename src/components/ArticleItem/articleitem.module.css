@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.articleItemContainer {
+    width: 60vw;
+    background-color: #17171A;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    padding: 1.5%;
+}
+
+.articleItemContainer:hover {
+    border-color: #E07B67;
+}
+
+.dateAndIconContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 1% 0;
+}
+
+.dateContent {
+    color: #E07B67;
+    font-family: 'Inter', serif;
+}
+
+.heartImageContent {
+    cursor: pointer;
+}
+
+.titleContent {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Space Grotesk', serif;
+}
+
+.descriptionContent {
+    color: #AFABB6;
+    font-family: 'Inter', serif;
+    padding: 1.5% 0;
+}

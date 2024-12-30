@@ -1,11 +1,29 @@
-import React from 'react';
+'use client';
 
-const ArticleItem = () => {
+import React, { useState } from 'react';
+
+import styles from './articleitem.module.css';
+
+const ArticleItem = (props) => {
+
+    const [imageHeart, setImageHeart] = useState('/heart_open.png');
+
+    const changeImageHeart = () => {
+        if(imageHeart === '/heart_open.png') {
+            setImageHeart('/heart_close.png');
+        } else {
+            setImageHeart('/heart_open.png'); 
+        }
+    }
+
     return (
-        <div>
-            <p>17 de ago. 2024</p>
-            <h3>O que é linguagem de programação? Conheça as principais</h3>
-            <p>Uma das mais populares vertentes da tecnologia da informação, a área de programação segue tendo muita demanda de trabalho justamente pela velocidade com que dispositivos tecnológicos vêm avançando.</p>
+        <div className={styles.articleItemContainer}>
+            <div className={styles.dateAndIconContainer}>
+                <p className={styles.dateContent}>{props.date}</p>
+                <img className={styles.heartImageContent} onClick={changeImageHeart} src={imageHeart} alt="Heart Icon" />
+            </div>
+            <h3 className={styles.titleContent}>{props.title}</h3>
+            <p className={styles.descriptionContent}>{props.description}</p>
         </div>
     );
 };
